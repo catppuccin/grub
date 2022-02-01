@@ -18,15 +18,18 @@
 ## Usage
 
 1. Clone this repository locally
-2. Copy `catppucin-grub-theme` folder to `/usr/share/grub/themes/`, e.g. :
+2. Copy `catppuccin-grub-theme` folder to `/usr/share/grub/themes/`, e.g. :
+   
    ```shell
    sudo cp -r catppuccin-grub-theme /usr/share/grub/themes/
    ```
 3. Uncomment and edit following line in `/etc/default/grub` to :
+   
    ```shell
-   GRUB_THEME="/usr/share/grub/themes/catppucin-grub-theme/theme.txt"
+   GRUB_THEME="/usr/share/grub/themes/catppuccin-grub-theme/theme.txt"
    ```
 4. Update grub :
+   
    ```shell
    sudo grub-mkconfig -o /boot/grub/grub.cfg
    ```
@@ -35,28 +38,25 @@
 
 - Q: **_"My Grub is not displayed in correct resolution"_**
   A: 
-  
-  1. Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to your's screen resolution) :  
+  - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to your's screen resolution) : 
   
      ```shell
      GRUB_GFXMODE=1920x1080
      ```
   
-  2. update grub (see point 4)
+  - update grub (see point 4)
   
 - Q: **_"My Grub is not detecting all installed systems"_**
   A: 
+  - Make sure You have [os-prober](https://joeyh.name/code/os-prober/) installed
   
-  1. Make sure You have [os-prober](https://joeyh.name/code/os-prober/) installed
+  - Add or uncomment following line in `/etc/default/grub` :
   
-  2. Add or uncomment following line in `/etc/default/grub`
      ```shell
      GRUB_DISABLE_OS_PROBER=false
      ```
+  - Save that file and update grub (see point 4)
   
-  3. Save that file and update grub (see point 4)
-  
-
 ## 💝 Thanks to
 
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
