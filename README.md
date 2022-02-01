@@ -36,7 +36,7 @@
 
 ## 🙋 FAQ
 
-- Q: **_"My Grub is not displayed in correct resolution"_**
+- Q: **_"My Grub is not working in my screen resolution"_**
   
   A: 
   - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to your's screen resolution) : 
@@ -46,7 +46,7 @@
      ```
   - update grub (see point 4)
   
-- Q: **_"My Grub is not detecting all installed systems"_**
+- Q: **_"My Grub is not detecting my all systems (dual-boot)"_**
   
   A: 
   - Make sure You have [os-prober](https://joeyh.name/code/os-prober/) installed
