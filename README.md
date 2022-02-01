@@ -12,7 +12,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/elkrien/catppuccin-grub/assets/cat-grub.png"/>
+  <img src="https://github.com/elkrien/catppuccin-grub/raw/main/assets/cat-grub.png"/>
 </p>
 
 ## Usage
@@ -34,19 +34,20 @@
    sudo grub-mkconfig -o /boot/grub/grub.cfg
    ```
 
-## 🙋 FAQ (optional)
+## 🙋 FAQ
 
 - Q: **_"My Grub is not displayed in correct resolution"_**
+  
   A: 
   - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to your's screen resolution) : 
   
      ```shell
      GRUB_GFXMODE=1920x1080
      ```
-  
   - update grub (see point 4)
   
 - Q: **_"My Grub is not detecting all installed systems"_**
+  
   A: 
   - Make sure You have [os-prober](https://joeyh.name/code/os-prober/) installed
   
