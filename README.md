@@ -5,14 +5,14 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/elkrien/catppuccin-grub/stargazers"><img src="https://img.shields.io/github/stars/elkrien/catppuccin-grub?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
-    <a href="https://github.com/elkrien/catppuccin-grub/issues"><img src="https://img.shields.io/github/issues/elkrien/catppuccin-grub?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/elkrien/catppuccin-grub/contributors"><img src="https://img.shields.io/github/contributors/elkrien/catppuccin-grub?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/elkrien/grub/stargazers"><img src="https://img.shields.io/github/stars/elkrien/grub?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
+    <a href="https://github.com/elkrien/grub/issues"><img src="https://img.shields.io/github/issues/elkrien/grub?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/elkrien/grub/contributors"><img src="https://img.shields.io/github/contributors/elkrien/grub?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/elkrien/catppuccin-grub/main/assets/cat-grub.png"><img src="https://github.com/elkrien/catppuccin-grub/raw/main/assets/cat-grub-preview.png"></a>
+  <a href="https://raw.githubusercontent.com/elkrien/grub/main/assets/cat-grub.png"><img src="https://github.com/elkrien/grub/raw/main/assets/cat-grub-preview.png"></a>
 </p>
 
 ## Usage
