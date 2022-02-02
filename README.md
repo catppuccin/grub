@@ -61,5 +61,3 @@
 ## 💝 Thanks to
 
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
-- [dracula](https://github.com/dracula/grub)
-
