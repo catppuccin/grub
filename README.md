@@ -12,7 +12,7 @@
 
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/elkrien/catppuccin-grub/assets/cat-grub.png"><img src="https://github.com/elkrien/catppuccin-grub/raw/main/assets/cat-grub-preview.png"></a>
+  <a href="https://raw.githubusercontent.com/elkrien/catppuccin-grub/main/assets/cat-grub.png"><img src="https://github.com/elkrien/catppuccin-grub/raw/main/assets/cat-grub-preview.png"></a>
 </p>
 
 ## Usage
