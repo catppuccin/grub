@@ -13,7 +13,7 @@
 
 <p align="center">
 <<<<<<< HEAD
-  <a href="https://raw.githubusercontent.com/elkrien/catppuccin-grub/assets/cat-grub-min.png"><img src="https://raw.githubusercontent.com/elkrien/catppuccin-grub/assets/cat-grub.png"/>
+  <a href="https://raw.githubusercontent.com/elkrien/catppuccin-grub/assets/cat-grub-preview.png"><img src="https://raw.githubusercontent.com/elkrien/catppuccin-grub/assets/cat-grub.png"/>
 =======
   <img src="https://github.com/elkrien/catppuccin-grub/raw/main/assets/cat-grub.png"/>
 >>>>>>> refs/remotes/origin/main
