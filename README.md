@@ -61,6 +61,7 @@
 ## 💝 Thanks to
 
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
+- [tuhanayim](https://github.com/tuhanayim)
 
 &nbsp;
 
