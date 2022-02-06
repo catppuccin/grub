@@ -58,7 +58,7 @@
      ```
   - Save that file and update grub (see point 4)
   
-- Q: **_Grub isn't detecting the theme_**
+- Q: **_"Grub isn't detecting the theme"_**
 
   A: Make sure to **comment** the following line in `/etc/default/grub` :
   
