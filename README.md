@@ -58,6 +58,15 @@
      ```
   - Save that file and update grub (see point 4)
   
+- Q: **_"Grub isn't detecting the theme"_**
+
+  A: Make sure to **comment** the following line in `/etc/default/grub` :
+  
+     ```
+     GRUB_TERMINAL_OUTPUT="console"
+     ```
+     
+  
 ## 💝 Thanks to
 
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
