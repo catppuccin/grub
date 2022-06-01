@@ -5,29 +5,51 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/catppuccin/grub/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/grub?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=1e1e28"></a>
-    <a href="https://github.com/catppuccin/grub/issues"><img src="https://img.shields.io/github/issues/catppuccin/grub?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/grub/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/grub?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/grub/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/grub?style=for-the-badge&logo=starship&color=B4BEFE&logoColor=CDD6F4&labelColor=313244"></a>
+    <a href="https://github.com/catppuccin/grub/issues"><img src="https://img.shields.io/github/issues/catppuccin/grub?colorA=313244&colorB=FAB387&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/grub/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/grub?colorA=313244&colorB=A6E3A1&style=for-the-badge"></a>
 </p>
 
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/catppuccin/grub/main/assets/cat-grub.png"><img src="https://github.com/catppuccin/grub/raw/main/assets/cat-grub-preview.png"></a>
+  <img src="https://github.com/catppuccin/grub/raw/main/assets/cat-grub.png"/>
 </p>
 
 ## Usage
 
-1. Clone this repository locally
-2. Copy `catppuccin-grub-theme` folder to `/usr/share/grub/themes/`, e.g. :
+1. Clone this repository locally and enter the cloned folder:
    
    ```shell
-   sudo cp -r catppuccin-grub-theme /usr/share/grub/themes/
+   git clone https://github.com/catppuccin/grub.git && cd grub
    ```
-3. Uncomment and edit following line in `/etc/default/grub` to :
+
+2. Copy all or selected theme from `src` folder to `/usr/share/grub/themes/`, for example to copy all themes use:
    
    ```shell
-   GRUB_THEME="/usr/share/grub/themes/catppuccin-grub-theme/theme.txt"
+   sudo cp -r src/* /usr/share/grub/themes/
    ```
+3. Uncomment and edit following line in `/etc/default/grub` to selected theme:
+    - 🌻 Catppuccin-latte:
+   
+      ```shell
+      GRUB_THEME="/usr/share/grub/themes/catppuccin-latte-grub-theme/theme.txt"
+      ```
+    - 🪴 Catppuccin-frappe:
+   
+      ```shell
+      GRUB_THEME="/usr/share/grub/themes/catppuccin-frappe-grub-theme/theme.txt"
+      ```
+    - 🌺 Catppuccin-macchiato:
+   
+      ```shell
+      GRUB_THEME="/usr/share/grub/themes/catppuccin-macchiato-grub-theme/theme.txt"
+      ```
+    - 🌿 Catppuccin-mocha:
+   
+      ```shell
+      GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
+      ```
+
 4. Update grub :
    
    ```shell
@@ -60,13 +82,16 @@
   
 - Q: **_"Grub isn't detecting the theme"_**
 
-  A: 
+  A1: 
   - Make sure to **comment** the following line in `/etc/default/grub` :
   
      ```
      GRUB_TERMINAL_OUTPUT="console"
      ```
   - Save that file and update grub (see point 4)
+  
+  A2:
+  - If A1 is not working try to replace `/usr/share/` with `/boot/` and repeat points (2-4).
   
 ## 💝 Thanks to
 
@@ -77,4 +102,4 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
 <p align="center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
-<p align="center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=302d41&colorB=c9cbff"/></a></p>
+<p align="center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=CDD6F4&colorA=313244&colorB=B4BEFE"/></a></p>
