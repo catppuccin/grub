@@ -12,7 +12,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/catppuccin/grub/raw/main/assets/cat-grub.png"/>
+  <img src="assets/cat-grub.png"/>
 </p>
 
 ## Usage
@@ -50,7 +50,7 @@
       GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
       ```
 
-4. Update grub :
+4. Update grub:
    
    ```shell
    sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -61,7 +61,7 @@
 - Q: **_"My Grub is not working in my screen resolution"_**
   
   A: 
-  - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to your's screen resolution) : 
+  - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to Your screen resolution): 
   
      ```shell
      GRUB_GFXMODE=1920x1080
@@ -83,7 +83,7 @@
 - Q: **_"Grub isn't detecting the theme"_**
 
   A1: 
-  - Make sure to **comment** the following line in `/etc/default/grub` :
+  - Make sure to **comment** the following line in `/etc/default/grub`:
   
      ```
      GRUB_TERMINAL_OUTPUT="console"
@@ -91,7 +91,7 @@
   - Save that file and update grub (see point 4)
   
   A2:
-  - If A1 is not working try to replace `/usr/share/` with `/boot/` and repeat points (2-4).
+  - If A1 is not working try to replace `/usr/share/` with `/boot/` and repeat points (2-4)
   
 ## 💝 Thanks to
 
