@@ -10,10 +10,28 @@
     <a href="https://github.com/catppuccin/grub/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/grub?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-
 <p align="center">
-  <img src="assets/cat-grub.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub.png"/>
 </p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-latte.png"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-frappe.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-macchiato.png"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-mocha.png"/>
+</details>
 
 ## Usage
 
@@ -58,7 +76,7 @@
 
 ## 🙋 FAQ
 
-- Q: **_"My Grub is not working in my screen resolution"_**
+- Q1: **_"My Grub is not working in my screen resolution"_**
   
   A: 
   - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to Your screen resolution): 
@@ -68,7 +86,7 @@
      ```
   - update grub (see point 4)
   
-- Q: **_"My Grub is not detecting my all systems (dual-boot)"_**
+- Q2: **_"My Grub is not detecting my all systems (dual-boot)"_**
   
   A: 
   - Make sure You have [os-prober](https://joeyh.name/code/os-prober/) installed
@@ -80,7 +98,7 @@
      ```
   - Save that file and update grub (see point 4)
   
-- Q: **_"Grub isn't detecting the theme"_**
+- Q3: **_"Grub isn't detecting the theme"_**
 
   A1: 
   - Make sure to **comment** the following line in `/etc/default/grub`:
