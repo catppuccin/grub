@@ -1,13 +1,13 @@
 <h3 align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://www.gnu.org/software/grub/">Grub</a>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+  Catppuccin for <a href="https://www.gnu.org/software/grub/">Grub</a>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/catppuccin/grub/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/grub?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/grub/issues"><img src="https://img.shields.io/github/issues/catppuccin/grub?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/grub/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/grub?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+  <a href="https://github.com/catppuccin/grub/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/grub?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+  <a href="https://github.com/catppuccin/grub/issues"><img src="https://img.shields.io/github/issues/catppuccin/grub?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+  <a href="https://github.com/catppuccin/grub/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/grub?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -35,82 +35,87 @@
 
 ## Usage
 
-1. Clone this repository locally and enter the cloned folder:
-   
-   ```shell
-   git clone https://github.com/catppuccin/grub.git && cd grub
-   ```
+**1.** Clone this repository locally and enter the cloned folder:
 
-2. Copy all or selected theme from `src` folder to `/usr/share/grub/themes/`, for example to copy all themes use:
-   
-   ```shell
-   sudo cp -r src/* /usr/share/grub/themes/
-   ```
-3. Uncomment and edit following line in `/etc/default/grub` to selected theme:
-    - 🌻 Catppuccin-latte:
-   
-      ```shell
-      GRUB_THEME="/usr/share/grub/themes/catppuccin-latte-grub-theme/theme.txt"
-      ```
-    - 🪴 Catppuccin-frappe:
-   
-      ```shell
-      GRUB_THEME="/usr/share/grub/themes/catppuccin-frappe-grub-theme/theme.txt"
-      ```
-    - 🌺 Catppuccin-macchiato:
-   
-      ```shell
-      GRUB_THEME="/usr/share/grub/themes/catppuccin-macchiato-grub-theme/theme.txt"
-      ```
-    - 🌿 Catppuccin-mocha:
-   
-      ```shell
-      GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
-      ```
+```shell
+git clone https://github.com/catppuccin/grub.git && cd grub
+```
 
-4. Update grub:
-   
-   ```shell
-   sudo grub-mkconfig -o /boot/grub/grub.cfg
-   ```
+**2.** Copy all or selected theme from `src` folder to
+`/usr/share/grub/themes/`, for example to copy all themes use:
+
+```shell
+sudo cp -r src/* /usr/share/grub/themes/
+```
+
+**3.** Uncomment and edit following line in `/etc/default/grub` to selected
+theme:
+
+🌻 Latte:
+
+```shell
+GRUB_THEME="/usr/share/grub/themes/catppuccin-latte-grub-theme/theme.txt"
+```
+
+🪴 Frappé:
+
+```shell
+GRUB_THEME="/usr/share/grub/themes/catppuccin-frappe-grub-theme/theme.txt"
+```
+
+🌺 Macchiato:
+
+```shell
+GRUB_THEME="/usr/share/grub/themes/catppuccin-macchiato-grub-theme/theme.txt"
+```
+
+🌿 Mocha:
+
+```shell
+GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
+```
+
+**4.** Update grub:
+
+```shell
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 ## 🙋 FAQ
 
-- Q1: **_"My Grub is not working in my screen resolution"_**
-  
-  A: 
-  - Uncomment and edit following line in `/etc/default/grub` (modify `1920x1080` to Your screen resolution): 
-  
-     ```shell
-     GRUB_GFXMODE=1920x1080
-     ```
-  - update grub (see point 4)
-  
-- Q2: **_"My Grub is not detecting my all systems (dual-boot)"_**
-  
-  A: 
-  - Make sure You have [os-prober](https://joeyh.name/code/os-prober/) installed
-  
-  - Add or uncomment following line in `/etc/default/grub` :
-  
-     ```shell
-     GRUB_DISABLE_OS_PROBER=false
-     ```
-  - Save that file and update grub (see point 4)
-  
-- Q3: **_"Grub isn't detecting the theme"_**
+**Q:** **_"My Grub is not working in my screen resolution"_**
 
-  A1: 
-  - Make sure to **comment** the following line in `/etc/default/grub`:
-  
-     ```
-     GRUB_TERMINAL_OUTPUT="console"
-     ```
-  - Save that file and update grub (see point 4)
-  
-  A2:
-  - If A1 is not working try to replace `/usr/share/` with `/boot/` and repeat points (2-4)
-  
+**A:** Uncomment and edit following line in `/etc/default/grub` (modify
+`1920x1080` to Your screen resolution):
+
+```shell
+GRUB_GFXMODE=1920x1080
+```
+
+Proceed to update grub (see step 4 of the installation)
+
+**Q**: **_"My Grub is not detecting my all systems (dual-boot)"_**
+
+**A:** Make sure you have `os-prober` installed.\
+Add or uncomment following line in `/etc/default/grub` :
+
+```shell
+GRUB_DISABLE_OS_PROBER=false
+```
+
+Save that file and update grub (see step 4 of the installation)
+
+**Q:** **_"Grub isn't detecting the theme"_**
+
+**A:** Make sure to **comment** the following line in `/etc/default/grub`:
+
+```
+GRUB_TERMINAL_OUTPUT="console"
+```
+
+Save that file and update grub (step 4). If this did not work, try to replace
+`/usr/share/` with `/boot/` and repeat installation steps 2-4.
+
 ## 💝 Thanks to
 
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
