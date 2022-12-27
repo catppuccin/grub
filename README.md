@@ -80,6 +80,10 @@ GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
 ```shell
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+For Fedora:
+```shell
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
 ## 🙋 FAQ
 
