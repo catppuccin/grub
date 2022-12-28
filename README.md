@@ -98,7 +98,7 @@ GRUB_GFXMODE=1920x1080
 
 Proceed to update grub (see step 4 of the installation)
 
-**Q**: **_"My Grub is not detecting my all systems (dual-boot)"_**
+**Q**: **_"My Grub is not detecting all my systems (dual-boot)"_**
 
 **A:** Make sure you have `os-prober` installed.\
 Add or uncomment following line in `/etc/default/grub` :
