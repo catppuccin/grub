@@ -48,6 +48,22 @@ git clone https://github.com/catppuccin/grub.git && cd grub
 sudo cp -r src/* /usr/share/grub/themes/
 ```
 
+⚠️ If you use encrypt your `/` partition (for exemple with luks) Grub wont be able to reach files in `/usr/share/grub/themes/` ⚠️
+
+You probably have a separate `/boot` partition, as an alternative you can copy the files to `/boot/grub/themes`
+
+```shell
+sudo mkdir /boot/grub/themes
+sudo cp -r src/* /boot/grub/themes/
+```
+
+For Fedora:
+```shell
+sudo mkdir /boot/grub2/themes
+sudo cp -r src/* /boot/grub2/themes/
+```
+
+
 **3.** Uncomment and edit following line in `/etc/default/grub` to selected
 theme:
 
