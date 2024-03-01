@@ -118,13 +118,17 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 ## Usage
 
-**1.** Clone this repository locally
+**1.** Clone this repository locally and enter the cloned folder:
+
+```shell
+git clone https://github.com/catppuccin/grub.git && cd grub/ventoy/
+```
 
 **2.** Open chosen flavor folder
 
 **3.** Copy `catpuccin-<flavour>` folder into `ventoy` folder on your ventoy drive. 
 
-**4.** Copy `ventoy.json` into `ventoy` folder on your drive or merge with an existing file.
+**4.** Copy `ventoy.json` into the `ventoy` folder on your drive or merge with an existing file.
 
 
 ## Acknowledgement
