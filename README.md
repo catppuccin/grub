@@ -85,6 +85,56 @@ For Fedora:
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
+## 💿 Ventoy Support
+<details>
+<summary>Ventoy Theme by Dooez</summary>
+<h3 align="center">
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+  Catppuccin for <a href="https://www.ventoy.net/en/index.html">Ventoy</a>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+</h3>
+
+ <img src="ventoy/assets/preview.png"/>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+  <img src="ventoy/assets/latte-scaled.png"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+  <img src="ventoy/assets/frappe-scaled.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+  <img src="ventoy/assets/macchiato-scaled.png"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+  <img src="ventoy/assets/mocha-scaled.png"/>
+</details>
+
+## Usage
+
+**1.** Clone this repository locally
+
+**2.** Open chosen flavor folder
+
+**3.** Copy `catpuccin-<flavour>` folder into `ventoy` folder on your ventoy drive. 
+
+**4.** Copy `ventoy.json` into `ventoy` folder on your drive or merge with an existing file.
+
+
+## Acknowledgement
+
+Logo font is [Poppins](https://fonts.google.com/specimen/Poppins)
+
+This is based on [Catppuccin for Grub](https://github.com/catppuccin/grub) and [Ventoy Purple Theme](https://github.com/odiegoduarte/ventoy-purple-theme)
+</details>
+
+
 ## 🙋 FAQ
 
 **Q:** **_"My Grub is not working in my screen resolution"_**
@@ -121,7 +171,7 @@ Save that file and update grub (step 4). If this did not work, try to replace
 `/usr/share/` with `/boot/` and repeat installation steps 2-4.
 
 ## 💝 Thanks to
-
+- [Dooez](https://github.com/Dooez/ventoy-catppuccin)
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
 - [tuhanayim](https://github.com/tuhanayim)
 

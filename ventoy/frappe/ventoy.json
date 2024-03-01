@@ -1,0 +1,9 @@
+{
+    "theme":{
+        "file": "/ventoy/catppuccin-frappe/theme.txt",
+        "ventoy_color": "#8caaee",
+        "fonts":[
+            "/ventoy/catppuccin-latte/terminus-14.pf2"
+        ]
+    }
+}
