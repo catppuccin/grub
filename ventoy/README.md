@@ -28,13 +28,10 @@
 
 ## Usage
 
-**1.** Clone this repository locally
-
-**2.** Open chosen flavor folder
-
-**3.** Copy `catpuccin-<flavour>` folder into `ventoy` folder on your ventoy drive. 
-
-**4.** Copy `ventoy.json` into `ventoy` folder on your drive or merge with an existing file.
+1. Clone this repository locally.
+2. Open chosen flavor folder.
+3. Copy `catpuccin-<flavor>` folder into `ventoy` folder on your ventoy drive. 
+4. Copy `ventoy.json` into `ventoy` folder on your drive or merge with an existing file.
 
 
 ## Acknowledgement
