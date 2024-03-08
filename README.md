@@ -11,117 +11,104 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub.png"/>
+  <img src="./assets/grub.png"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-latte.png"/>
+  <img src="./assets/grub-latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-frappe.png"/>
+  <img src="./assets/grub-frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-macchiato.png"/>
+  <img src="./assets/grub-macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/grub/main/assets/grub-mocha.png"/>
+  <img src="./assets/grub-mocha.png"/>
 </details>
 
 ## Usage
 
-**1.** Clone this repository locally and enter the cloned folder:
+1. Clone this repository locally and enter the cloned folder:
 
-```shell
-git clone https://github.com/catppuccin/grub.git && cd grub
-```
+    ```shell
+    git clone https://github.com/catppuccin/grub.git && cd grub
+    ```
 
-**2.** Copy all or selected theme from `src` folder to
-`/usr/share/grub/themes/`, for example to copy all themes use:
+2. Copy all or selected theme from `src` folder to
+`/usr/share/grub/themes/`. E.g. to copy all themes use:
 
-```shell
-sudo cp -r src/* /usr/share/grub/themes/
-```
+    ```shell
+    sudo cp -r src/* /usr/share/grub/themes/
+    ```
 
-**3.** Uncomment and edit following line in `/etc/default/grub` to selected
-theme:
+3. Uncomment and edit following line in `/etc/default/grub` to your selected
+   theme:
 
-🌻 Latte:
+    ```shell
+    GRUB_THEME="/usr/share/grub/themes/catppuccin-<flavor>-grub-theme/theme.txt"
+    ```
 
-```shell
-GRUB_THEME="/usr/share/grub/themes/catppuccin-latte-grub-theme/theme.txt"
-```
+4. Update grub:
 
-🪴 Frappé:
+    ```shell
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
+    ```
 
-```shell
-GRUB_THEME="/usr/share/grub/themes/catppuccin-frappe-grub-theme/theme.txt"
-```
+    For Fedora:
 
-🌺 Macchiato:
+    ```shell
+    sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+    ```
 
-```shell
-GRUB_THEME="/usr/share/grub/themes/catppuccin-macchiato-grub-theme/theme.txt"
-```
+## 💿 Ventoy Support
 
-🌿 Mocha:
-
-```shell
-GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
-```
-
-**4.** Update grub:
-
-```shell
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-```
-For Fedora:
-```shell
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
+See instructions in the [ventoy directory](ventoy/).
 
 ## 🙋 FAQ
 
-**Q:** **_"My Grub is not working in my screen resolution"_**
+- Q: **_"How can I make Grub work with my screen resolution?"_**
 
-**A:** Uncomment and edit following line in `/etc/default/grub` (modify
-`1920x1080` to Your screen resolution):
+  A: Uncomment and edit following line in `/etc/default/grub` (modify
+  `1920x1080` to your screen resolution):
 
-```shell
-GRUB_GFXMODE=1920x1080
-```
+  ```shell
+  GRUB_GFXMODE=1920x1080
+  ```
 
-Proceed to update grub (see step 4 of the installation)
+  Proceed to update grub (see step 4 of the installation)
 
-**Q**: **_"My Grub is not detecting all my systems (dual-boot)"_**
+- Q: **_"How can I make Grub detect all my operating systems? (dual-boot)"_**
 
-**A:** Make sure you have `os-prober` installed.\
-Add or uncomment following line in `/etc/default/grub` :
+  A: Make sure you have `os-prober` installed. Add or uncomment following line
+    in `/etc/default/grub` :
 
-```shell
-GRUB_DISABLE_OS_PROBER=false
-```
+  ```shell
+  GRUB_DISABLE_OS_PROBER=false
+  ```
 
-Save that file and update grub (see step 4 of the installation)
+  Save that file and update grub (see step 4 of the installation)
 
-**Q:** **_"Grub isn't detecting the theme"_**
+- Q: **_"How can I make Grub detect my theme?"_**
 
-**A:** Make sure to **comment** the following line in `/etc/default/grub`:
+  A: Make sure to **comment** the following line in `/etc/default/grub`:
 
-```
-GRUB_TERMINAL_OUTPUT="console"
-```
+  ```
+  GRUB_TERMINAL_OUTPUT="console"
+  ```
 
-Save that file and update grub (step 4). If this did not work, try to replace
-`/usr/share/` with `/boot/` and repeat installation steps 2-4.
+  Save that file and update grub (step 4). If this did not work, try to replace
+  `/usr/share/` with `/boot/` and repeat installation steps 2-4.
 
 ## 💝 Thanks to
 
+- [Dooez](https://github.com/Dooez/ventoy-catppuccin)
 - [vinceliuice](https://github.com/vinceliuice/grub2-themes)
 - [tuhanayim](https://github.com/tuhanayim)
 
