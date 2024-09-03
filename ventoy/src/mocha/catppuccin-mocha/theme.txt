@@ -29,9 +29,9 @@ terminal-border: "0"
 
 # Show the boot menu
 + boot_menu {
-  left = 50%-240
+  left = 50%-390
   top = 30%
-  width = 480
+  width = 780
   height = 30%
   item_font = "Unifont Regular 16"
   item_color = "#CDD6F4"
