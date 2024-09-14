@@ -100,7 +100,7 @@ See instructions in the [ventoy directory](ventoy/).
   A: Make sure to **comment** the following line in `/etc/default/grub` like so:
 
   ```shell
-  #GRUB_TERMINAL_OUTPUT="console"
+  # GRUB_TERMINAL_OUTPUT="console"
   ```
 
   Save that file and update grub (step 4). If this did not work, try to replace
