@@ -97,10 +97,10 @@ See instructions in the [ventoy directory](ventoy/).
 
 - Q: **_"How can I make Grub detect my theme?"_**
 
-  A: Make sure to **comment** the following line in `/etc/default/grub`:
+  A: Make sure to **comment** the following line in `/etc/default/grub` like so:
 
-  ```
-  GRUB_TERMINAL_OUTPUT="console"
+  ```shell
+  #GRUB_TERMINAL_OUTPUT="console"
   ```
 
   Save that file and update grub (step 4). If this did not work, try to replace
