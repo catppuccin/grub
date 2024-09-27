@@ -85,20 +85,18 @@ The process for Fedora/GRUB 2 is slightly different than detailed above.
     GRUB_THEME="/boot/grub2/themes/catppuccin-<flavor>-grub-theme/theme.txt"
     ```
 
-3. Edit following line in `/etc/default/grub` to use a graphical terminal that
+4. Edit following line in `/etc/default/grub` to use a graphical terminal that
    can display images:
 
     ```shell
     GRUB_TERMINAL_OUTPUT="gfxterm" # ...should be "console" by default
     ```
 
-4. Update grub:
+5. Update grub:
 
     ```shell
     sudo grub2-mkconfig -o /boot/grub2/grub.cfg
     ```
-
-5. Reboot your system.
 
 ## 💿 Ventoy Support
 
