@@ -61,11 +61,44 @@
     sudo grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
-    For Fedora:
+### Fedora/GRUB 2
+
+The process for Fedora/GRUB 2 is slightly different than detailed above.
+
+1. Clone this repository locally and enter the cloned folder:
+
+    ```shell
+    git clone https://github.com/catppuccin/grub.git && cd grub
+    ```
+
+2. Copy all or selected theme from `src` folder to
+`/boot/grub2/themes/`. E.g. to copy all themes use:
+
+    ```shell
+    sudo cp -r src/* /boot/grub2/themes/
+    ```
+
+3. Uncomment and edit following line in `/etc/default/grub` to your selected
+   theme:
+
+    ```shell
+    GRUB_THEME="/boot/grub2/themes/catppuccin-<flavor>-grub-theme/theme.txt"
+    ```
+
+3. Edit following line in `/etc/default/grub` to use a graphical terminal that
+   can display images:
+
+    ```shell
+    GRUB_TERMINAL_OUTPUT="gfxterm" # ...should be "console" by default
+    ```
+
+4. Update grub:
 
     ```shell
     sudo grub2-mkconfig -o /boot/grub2/grub.cfg
     ```
+
+5. Reboot your system.
 
 ## 💿 Ventoy Support
 
