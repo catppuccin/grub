@@ -61,9 +61,32 @@
     sudo grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
-    For Fedora:
+### Fedora and openSUSE and other grub2 distros.
+These distros use grub2 instead of grub. You need to make minor adjustments to the commands in order to make it work on these.
+
+1. Clone this repository locally and enter the cloned folder:
 
     ```shell
+    git clone https://github.com/catppuccin/grub.git && cd grub
+    ```
+
+2. Copy all or selected theme from `src` folder to `/usr/share/grub2/themes`. E.g. to copy all themes use:
+
+   ```shell
+   sudo cp -r src/* /usr/share/grub2/themes
+    ```
+   
+4. Uncomment and edit the following line in `/etc/default/grub` to your selected theme:
+
+   ```shell
+   GRUB_THEME="/usr/share/grub/themes/catppuccin-<flavour>-grub-theme/theme.txt
+   ```
+   
+   On openSUSE, this line may be uncommented by default, and have the openSUSE theme added. Just change the path to your Catppuccin theme.
+
+6. Update grub
+
+   ```shell
     sudo grub2-mkconfig -o /boot/grub2/grub.cfg
     ```
 
