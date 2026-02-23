@@ -106,6 +106,12 @@ See instructions in the [ventoy directory](ventoy/).
   Save that file and update grub (step 4). If this did not work, try to replace
   `/usr/share/` with `/boot/` and repeat installation steps 2-4.
 
+- Q: **_"Why is the default countdown timer text overlapping the theme?"_**
+A: Force GRUB to use the menu style instead of the hidden/countdown style by setting `GRUB_TIMEOUT_STYLE="menu"` in `/etc/default/grub`. Proceed to update grub (see step 4 of the installation).
+
+- Q: **_"How can I remove the default blue splash screen that flashes after GRUB on Debian/Kali?"_**
+A: Override the default background by adding `GRUB_BACKGROUND="/usr/share/backgrounds/transition.png"` (or your preferred image path) to `/etc/default/grub`. Proceed to update grub (see step 4 of the installation).
+
 ## 💝 Thanks to
 
 - [Dooez](https://github.com/Dooez/ventoy-catppuccin)
