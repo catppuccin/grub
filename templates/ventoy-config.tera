@@ -1,0 +1,17 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+  filename: "ventoy/src/{{ flavor.identifier }}/ventoy.json"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
+---
+{
+    "theme":{
+        "file": "/ventoy/catppuccin-{{ flavor.identifier }}/theme.txt",
+        "ventoy_color": "{{ blue.hex }}",
+        "fonts":[
+            "/ventoy/catppuccin-{{ flavor.identifier }}/terminus-14.pf2"
+        ]
+    }
+}

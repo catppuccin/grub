@@ -56,44 +56,44 @@ terminal-border: "0"
   color = "#CDD6F4"
 }
 
-+ hbox{ 
++ hbox{
     left = 30%
     top = 95%
     width = 10%
     height = 25
-    + label {text = "@VTOY_HOTKEY_TIP@" color = "#CDD6F4" align = "left"} 
+    + label {text = "@VTOY_HOTKEY_TIP@" color = "#CDD6F4" align = "left"}
 }
 
 
-+ hbox{ 
++ hbox{
     left = 30%
     top = 95%-50
     width = 10%
     height = 25
-    + label {text = "@VTOY_ISO_RAW@" color = "#F38BA8" align = "left"} 
+    + label {text = "@VTOY_ISO_RAW@" color = "#F38BA8" align = "left"}
 }
 
 
-+ hbox{ 
++ hbox{
     left = 30%+200
     top = 95%-50
     width = 10%
     height = 25
-    + label {text = "@VTOY_GRUB2_MODE@" color = "#F38BA8" align = "left"} 
+    + label {text = "@VTOY_GRUB2_MODE@" color = "#F38BA8" align = "left"}
 }
 
-+ hbox{ 
++ hbox{
     left = 30%+200
     top = 95%-25
     width = 10%
     height = 25
-    + label {text = "@VTOY_WIMBOOT_MODE@" color = "#F38BA8" align = "left"} 
+    + label {text = "@VTOY_WIMBOOT_MODE@" color = "#F38BA8" align = "left"}
 }
 
-+ hbox{ 
++ hbox{
     left = 90%
-    top = 55 
+    top = 55
     width = 10%
     height = 25
-    + label {text = "@VTOY_ISO_UEFI_DRV@" color = "#F38BA8" align = "left"} 
+    + label {text = "@VTOY_ISO_UEFI_DRV@" color = "#F38BA8" align = "left"}
 }

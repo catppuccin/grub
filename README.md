@@ -106,6 +106,18 @@ See instructions in the [ventoy directory](ventoy/).
   Save that file and update grub (step 4). If this did not work, try to replace
   `/usr/share/` with `/boot/` and repeat installation steps 2-4.
 
+## Development
+
+The GRUB and Ventoy configuration files are generated with
+[Whiskers](https://github.com/catppuccin/whiskers). Regenerate them from the
+repository root with:
+
+```sh
+whiskers templates/grub.tera
+whiskers templates/ventoy.tera
+whiskers templates/ventoy-config.tera
+```
+
 ## 💝 Thanks to
 
 - [Dooez](https://github.com/Dooez/ventoy-catppuccin)
